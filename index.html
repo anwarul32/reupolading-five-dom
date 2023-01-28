@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select your fav-5</title>
+     <!-- Google font link -->
+     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap" rel="stylesheet">
+    <!-- Tailwind css  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisyUI link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.31.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                offWhite: '#FFFFFF',
+                yellow: '#FECC02',
+                offDark: '#0D0D0D',
+                ourRed: '#FF5E19',
+                offGray: '#AFAFAF',
+              },
+              fontFamily:{
+                babas: ['Bebas Neue', 'cursive'],
+                montserrat: ['Montserrat', 'sans-serif'],
+              },
+            },
+          },
+        }
+    </script>
+</head>
+<body class="bg-gray-800">
+    <header class="bg-black">
+      <div class="relative">
+        <img src="images/Card-psg.png" alt="" class="absolute top-5 right-6">
+      </div>
+      <div class="pt-16">
+        <h1 class="text-center text-ourRed text-7xl">Select Your Favourite Five</h1>
+        <p class="text-white text-center mt-7">Your favourite five of PSG.  There are many PSG football players held on national as well as international levels.</p>
+      </div>
+      <div class="relative">
+        <img src="images/header-mbappe.png" alt="" class="">
+      </div>
+    </header>
+    <main class="w-5/6 mx-auto mt-10 bg-gray">
+      <section class="grid grid-cols-3 gap-4">
+        
+          <div class="grid grid-cols-3 col-span-2 row-span-2 gap-4">
+            <!-- Player card-1   -->
+            <div class="card card-compact w-full bg-offDark shadow-xl">
+              <img src="images/messi.png" alt="Lionel Messi images" />
+              <div class="card-body text-white">
+                <h2  id="player-1" class="card-title justify-center">Lionel Messi</h2>
+                <div class="flex text-center">
+                  <p class="text-xl">36 Goals</p>
+                  <p class="text-xl">.</p>
+                  <p class="text-xl">120 Assist</p>
+                </div>
+                <div class="card-actions justify-center">
+                  <button id="btn-messi"  class="btn bg-blue-600 text-white px-10">Select</button>
+                </div>
+              </div>
+            </div>
+            <!-- Player card-2   -->
+            <div class="card card-compact w-full bg-offDark shadow-xl">
+              <img src="images/neymar.png" alt="Neymar Jr images" />
+              <div class="card-body text-white">
+                <h2 id="player-2" class="card-title justify-center">Neymar Jr</h2>
+                <div class="flex text-center">
+                  <p class="text-xl">36 Goals</p>
+                  <p class="text-xl">.</p>
+                  <p class="text-xl">120 Assist</p>
+                </div>
+                <div class="card-actions justify-center">
+                  <button id="btn-neymar"  class="btn bg-blue-600 text-white px-10">Select</button>
+                </div>
+              </div>
+            </div>
+            <!-- Player card-3   -->
+            <div class="card card-compact w-full bg-offDark shadow-xl">
+              <img src="images/ramos.png" alt="Sergio Ramos images" />
+              <div class="card-body text-white">
+                <h2 id="player-3" class="card-title justify-center">Sergio Ramos</h2>
+                <div class="flex text-center">
+                  <p class="text-xl">36 Goals</p>
+                  <p class="text-xl">.</p>
+                  <p class="text-xl">120 Assist</p>
+                </div>
+                <div class="card-actions justify-center">
+                  <button id="btn-ramos"  class="btn bg-blue-600 text-white px-10">Select</button>
+                </div>
+              </div>
+            </div>
+            <!-- Player card-4   -->
+            <div class="card card-compact w-full bg-offDark shadow-xl">
+              <img src="images/vitor.png" alt="Vitor Machado images" />
+              <div class="card-body text-white">
+                <h2 id="player-4" class="card-title justify-center">Vitor Machado</h2>
+                <div class="flex text-center">
+                  <p class="text-xl">36 Goals</p>
+                  <p class="text-xl">.</p>
+                  <p class="text-xl">120 Assist</p>
+                </div>
+                <div class="card-actions justify-center">
+                  <button id="btn-vitor"  class="btn bg-blue-600 text-white px-10">Select</button>
+                </div>
+              </div>
+            </div>
+            <!-- Player card-5   -->
+            <div class="card card-compact w-full bg-offDark shadow-xl">
+              <img src="images/renato.png" alt="Renato Sanches images" />
+              <div class="card-body text-white">
+                <h2 id="player-5" class="card-title justify-center">Renato Sanches</h2>
+                <div class="flex text-center">
+                  <p class="text-xl">36 Goals</p>
+                  <p class="text-xl">.</p>
+                  <p class="text-xl">120 Assist</p>
+                </div>
+                <div class="card-actions justify-center">
+                  <button id="btn-renato"  class="btn bg-blue-600 text-white px-10">Select</button>
+                </div>
+              </div>
+            </div>
+            <!-- Player card-6   -->
+            <div class="card card-compact w-full bg-offDark shadow-xl">
+              <img src="images/mbappe.png" alt="Kylian Mbappe images" />
+              <div class="card-body text-white">
+                <h2 id="player-6" class="card-title justify-center">Kylian Mbappe</h2>
+                <div class="flex text-center">
+                  <p class="text-xl">36 Goals</p>
+                  <p class="text-xl">.</p>
+                  <p class="text-xl">120 Assist</p>
+                </div>
+                <div class="card-actions justify-center">
+                  <button id="btn-mbappe"  class="btn bg-blue-600 text-white px-10">Select</button>
+                </div>
+              </div>
+            </div>
+            <!-- Player card-7   -->
+            <div class="card card-compact w-full bg-offDark shadow-xl">
+              <img src="images/marco.png" alt="Marco Verratti images" />
+              <div class="card-body text-white">
+                <h2 id="player-7" class="card-title justify-center">Marco Verratti</h2>
+                <div class="flex text-center">
+                  <p class="text-xl">36 Goals</p>
+                  <p class="text-xl">.</p>
+                  <p class="text-xl">120 Assist</p>
+                </div>
+                <div class="card-actions justify-center">
+                  <button id="btn-marco"  class="btn bg-blue-600 text-white px-10">Select</button>
+                </div>
+              </div>
+            </div>
+            <!-- Player card-8   -->
+            <div class="card card-compact w-full bg-offDark shadow-xl">
+              <img src="images/dimaria.png" alt="Di Maria images" />
+              <div class="card-body text-white">
+                <h2 id="player-8" class="card-title justify-center">Di Maria</h2>
+                <div class="flex text-center">
+                  <p class="text-xl">36 Goals</p>
+                  <p class="text-xl">.</p>
+                  <p class="text-xl">120 Assist</p>
+                </div>
+                <div class="card-actions justify-center">
+                  <button id="btn-dimaria"  class="btn bg-blue-600 text-white px-10">Select</button>
+                </div>
+              </div>
+            </div>
+            <!-- Player card-9   -->
+            <div class="card card-compact w-full bg-offDark shadow-xl">
+              <img src="images/fabian.png" alt="Fabian Ruiz images" />
+              <div class="card-body text-white">
+                <h2 id="player-9" class="card-title justify-center">Fabian Ruiz</h2>
+                <div class="flex text-center">
+                  <p class="text-xl">36 Goals</p>
+                  <p class="text-xl">.</p>
+                  <p class="text-xl">120 Assist</p>
+                </div>
+                <div class="card-actions justify-center">
+                  <button id="btn-fabian"  class="btn bg-blue-600 text-white px-10">Select</button>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        
+          <!-- Player name Display using order list -->
+          <div class="mx-3">
+              <ol id="player-order"class="text-offGray" type="A">
+              </ol>
+          </div>
+
+          <!-- Calculate area -->
+          <div class="mx-3">
+              <h1 class="text-5xl text-white text-center">Budget</h1>
+              <div class="">
+                <div class="flex gap-3">
+                  <p class="text-offGray my-5 ">Par Player</p>
+                  <input id="player-price" type="text" class="my-5 rounded">
+                </div>
+                <button id="player-expenses" class="btn btn-block">Calculate</button>
+                <p class="text-offGray my-3">Player Expenses $<span id="expenses-total"></span></p>
+              </div>
+              <div class="mx-3">
+                <div class="flex gap-3">
+                  <p class="text-offGray my-5 ">Menager</p>
+                  <input id="menager" type="text" class="my-5 rounded">
+                </div>
+                <div class="flex gap-3">
+                  <p class="text-offGray my-5 ">Coach</p>
+                  <input id="coach" type="text" class="my-5 rounded">
+                </div>
+                <button id="total-amount-expenses" class="btn btn-block">Calculate Total</button>
+                <div class="flex justify-between my-3">
+                  <p class="text-offGray">Total </p>
+                  <p class="text-ourRed">$<span id="total-amount">0</span></p>
+                </div>
+              </div>
+              
+          </div>
+      </section>
+    </main>
+    <script src="js/fav-player.js"></script>
+</body>
+</html>
